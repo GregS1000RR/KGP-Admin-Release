@@ -1,16 +1,16 @@
 {
   "name": "Klugle Admin",
   "slug": "klugle-admin",
-  "version": "4.5.0",
-  "download_url": "https://github.com/GregS1000RR/KGP-Admin-Release/releases/download/v4.5.0/klugle-admin-4.5.0.zip",
+  "version": "4.5.1",
+  "download_url": "https://github.com/GregS1000RR/KGP-Admin-Release/releases/download/v4.5.1/klugle-admin-4.5.1.zip",
   "homepage": "https://github.com/GregS1000RR/KGP-Admin-Release",
   "author": "Klugle",
   "requires": "6.0",
   "tested": "6.8",
   "requires_php": "7.4",
-  "last_updated": "2026-08-19 16:38:19",
+  "last_updated": "2026-08-19 17:20:23",
   "sections": {
     "description": "Klugle Admin -- plugin interne Klugle, distribue hors annuaire WordPress.org.",
-    "changelog": "<h4>4.5.0</h4><p>Mécanisme de mise à jour standard WordPress (includes/updater.php) — le plugin apparaît désormais dans Tableau de bord &gt; Mises à jour et signale les nouvelles versions dans la liste des extensions. En-tête « Update URI: » + hook natif update_plugins_{hostname} (WP 5.8+) interrogeant un manifeste JSON public sur le dépôt de release GitHub KGP-Admin-Release (aucune source exposée). Fiche « Voir les détails » via plugins_api, cache transient 12 h, purge après installation. Ajout de la constante KLUGLE_ENTRY_PLUGIN_FILE (identification du plugin dans le hook, partagé avec Klugle Engine sur le même hôte). ⚠️ Module placé dans includes/ et NON dans modules/ : ces derniers sont chargés conditionnellement selon l'option klugle_entry_modules, alors que l'updater doit l'être systématiquement. ⚠️ Dépôt de release DISTINCT de celui de PRJ07_PJVD. Licence alignée sur GPL-2.0+ (License URI ajoutée, LICENSE racine était en GPLv3) ; réserves de marque et de contenus dans NOTICE.md.</p>"
+    "changelog": "<h4>4.5.1</h4><p>Incrément de patch seul (aucun changement fonctionnel) : marqueur destiné à valider de bout en bout le mécanisme de mise à jour WordPress sur kgp-staging.game.klugle.com. Publié en Release GitHub SANS être poussé sur Gitea, afin que la version distante (4.5.1) dépasse celle installée par Plesk (4.5.0) — seul cas où WordPress a quelque chose à annoncer. Attendu : « Une nouvelle version est disponible » après Tableau de bord &gt; Mises à jour &gt; Vérifier à nouveau, puis installation en un clic. À pousser sur Gitea une fois le test validé, sinon le prochain déploiement ramènera le site en 4.5.0.</p>"
   }
 }
